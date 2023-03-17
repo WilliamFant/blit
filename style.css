@@ -1,0 +1,59 @@
+@import 'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/main.min.css';
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+  
+  .form-container {
+    width: 40%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label,
+  input,
+  output,
+  button {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  #calendar {
+    width: 40%;
+  }
+  
+  #event-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  
