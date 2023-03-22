@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       switch (repeatOption) {
         case 'daily':
-          for (let i = 0; i < 365; i++) {
+          for (let i = 0; i < 60; i++) {
             calendar.addEvent(createEventObject(name, startTime, endTime));
             startTime.setDate(startTime.getDate() + 1);
             endTime.setDate(endTime.getDate() + 1);
