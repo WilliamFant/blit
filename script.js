@@ -37,21 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
   
       switch (repeatOption) {
         case 'daily':
-          for (let i = 0; i < 9999; i++) {
+          for (let i = 0; i < 365; i++) {
             calendar.addEvent(createEventObject(name, startTime, endTime));
             startTime.setDate(startTime.getDate() + 1);
             endTime.setDate(endTime.getDate() + 1);
           }
           break;
         case 'weekly':
-          for (let i = 0; i < 4; i++) {
+          for (let i = 0; i < 52; i++) {
             calendar.addEvent(createEventObject(name, startTime, endTime));
             startTime.setDate(startTime.getDate() + 7);
             endTime.setDate(endTime.getDate() + 7);
           }
           break;
         case 'monthly':
-          for (let i = 0; i < 3; i++) {
+          for (let i = 0; i < 12; i++) {
             calendar.addEvent(createEventObject(name, startTime, endTime));
             startTime.setMonth(startTime.getMonth() + 1);
             endTime.setMonth(endTime.getMonth() + 1);
